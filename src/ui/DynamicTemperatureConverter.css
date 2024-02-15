@@ -1,0 +1,29 @@
+/*
+Place your custom CSS here
+*/
+
+.dynamicMeasurementConverterInput{
+    position: relative;
+}
+.unitLabel{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.1875rem;
+    letter-spacing: 0.009375rem;
+    text-align: right;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: auto;
+    height: auto;
+    padding: 0 0.5rem;
+}

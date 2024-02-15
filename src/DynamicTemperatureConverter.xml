@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="resilientitservices.dynamictemperatureconverter.DynamicTemperatureConverter" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Dynamic Temperature Converter</name>
+    <description>We can convert temperature dynamically.</description>
+    <icon>
+    iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAUVBMVEX///8AAABXV1dbW1vX19fT09MzMzMvLy/7+/s3NzcrKytiYmI+Pj64uLi7u7uampobGxvg4OBRUVGAgIBERETb29vm5uYgICCkpKRnZ2fBwcHUTdvaAAABEklEQVR4nO3bzVLCMACF0YioWBSt//j+DyqyLsOkM5Sb9pxl6OJ+OxZJKQAAAAAAAAAAAAAAUJ63q6Zsd8MdLzfN+RkMeb32rHrfgyHXXjWGkDSnQ7p1I7ozIfeDPwV6EBJGSBohaYSkqQ1Z95ffNEpdSH/4I/C2mWJXtbqQj/+j9yl2VasLOR49TbGrWlXI5nj0OMmwWkLSCEkjJI2QNELSCEkjJI2QNELSCEkjJI2QNELSCEkjJI2QNELSCEkjJI2QNMsMmc0VjvlcqukPn6/mcM2plM+vy28aZbFXAWMJSSMkjZA0iwnp7hpx7rFYY4SkGQyZzaPj2TwDL7v9bVP2v8MdAAAAAAAAAAAAAAAsyx/q7hx92rE+JQAAAABJRU5ErkJggg==
+    </icon>
+    <properties>
+         <propertyGroup caption="General">
+            <propertyGroup caption="Data Source">
+                <property key="inputValue" type="attribute" required="true">
+                    <caption>Input Decimal Value</caption>
+                    <description></description>
+                    <attributeTypes>
+                        <attributeType name="Decimal" />
+                    </attributeTypes>
+                </property>
+                <property key="decimalPrecision" type="attribute" required="true">
+                    <caption>Decimal Precision</caption>
+                    <description></description>
+                    <attributeTypes>
+                        <attributeType name="Integer" />
+                    </attributeTypes>
+                </property>
+                <property key="inputConversionRate" type="enumeration" defaultValue="F">
+		            <caption>Temperature Conversion</caption>
+		            <description></description>
+                    <enumerationValues>
+                        <enumerationValue key="C">Celcius</enumerationValue>
+                        <enumerationValue key="F">Fahrenheit</enumerationValue>
+                        <enumerationValue key="K">Kelvin</enumerationValue>
+                    </enumerationValues>
+	            </property>
+                <property key="unit" type="boolean" required="true" defaultValue="true">
+                    <caption>Unit</caption>
+                    <description></description>
+                </property>
+                <property key="placeholder" type="string" required="false" defaultValue="">
+                    <caption>Placeholder text</caption>
+                    <description></description>
+                </property>
+            </propertyGroup>
+            <propertyGroup caption="Label">
+                <systemProperty key="Label" />
+            </propertyGroup>
+            <propertyGroup caption="Visibility">
+                <systemProperty key="Visibility"/>
+            </propertyGroup>
+            <propertyGroup caption="Editability">
+                <systemProperty key="Editability"/>
+            </propertyGroup>
+        </propertyGroup>
+        <propertyGroup caption="Events">
+            <propertyGroup caption="Events">
+                <property key="onChange" type="action">
+                    <caption>On Change</caption>
+                    <description></description>
+                </property>
+                <property key="onBlurChange" type="action">
+                    <caption>On Leave</caption>
+                    <description></description>
+                </property>
+            </propertyGroup>
+        </propertyGroup>
+    </properties>
+</widget>
